@@ -3,15 +3,21 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div id="sidebar">
-        <ul id="mainMenu">
-            <li><a href="#">Link 1</a></li>
-            <li class="active"><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+    <div class="layout">
+      <div class="layout__sidebar">
+        <ul class="sidemenu">
+            <li class="sidemenu__item">
+                <a class="sidemenu__link" href="#">Link 1</a>
+            </li>
+            <li class="sidemenu__item sidemenu__item--active">
+                <a class="sidemenu__link" href="#">Link 2</a>
+            </li>
+            <li class="sidemenu__item">
+                <a class="sidemenu__link" href="#">Link 3</a>
+            </li>
         </ul>
       </div>
-      <div class="main">
+      <div class="layout__main">
         <a class="button" href="#">Click me</a>
       </div>
     </div>
