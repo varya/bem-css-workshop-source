@@ -48,6 +48,18 @@ body {
     color: #807983;
 }
 
+.sidemenu--secondary .sidemenu__link {
+  color: red;
+}
+
+.sidemenu--secondary .sidemenu__item--active {
+  background-color: purple;
+}
+
+.sidemenu--secondary .sidemenu__item:visited {
+  background-color: blue;
+}
+
 .button {
     background-color: #2a1d30;
     color: #eff7f3;
@@ -55,4 +67,7 @@ body {
     padding: 0.5em;
     border-radius: 0.5em;
     display: inline-block;
+}
+.button--small {
+    font-size: 0.75em;
 }
