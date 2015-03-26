@@ -19,37 +19,69 @@ body {
     padding: 1em;
 }
 
-ul#mainMenu {
+ul#mainMenu,
+ul#secondMenu {
     margin: 0;
     padding: 0;
     width:100%;
     list-style-type: none;
 }
 
-ul#mainMenu li.active a {
+ul#mainMenu li.active,
+ul#secondMenu li.active {
     background-color: #eff7f3;
 }
 
-ul#mainMenu li a {
+ul#secondMenu li.active {
+  background-color: #8548A0;
+}
+
+ul#mainMenu li a,
+ul#secondMenu li a{
     text-decoration: none;
     color: #2a1d30;
     padding: 10.5px 11px;
     display:block;
 }
 
-ul#mainMenu li a:visited {
+ul#mainMenu li a:visited,
+ul#secondMenu li a:visited {
     color: #807983;
 }
 
-ul#mainMenu li a:hover, ul#mainMenu li .current {
+ul#secondMenu li a:visited {
+    color: #48A053;
+}
+
+ul#mainMenu li a:hover, ul#mainMenu li .current,
+ul#secondMenu li a:hover, ul#secondMenu li .current {
     color: #ef4942;
     background-color: #fbd9d8;
 }
 
-a.button {
+ul#secondMenu li a:hover, ul#secondMenu li .current {
+    color: #ef4942;
+    background-color: #A0487D;
+}
+
+a.button
+{
     background-color: #2a1d30;
     color: #eff7f3;
     text-decoration: none;
     padding: 0.5em;
     border-radius: 0.5em;
+    display: inline-block;
+}
+
+a.small-button,
+ul#mainMenu li a.button
+{
+    background-color: #2a1d30;
+    color: #eff7f3;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-size: 0.5rem;
 }
